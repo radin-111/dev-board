@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DEV BOARD</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,23 +28,215 @@
             </div>
             <div class="flex items-center gap-4">
                 <div><button class="bg-[#F4F7FF] p-4 flex items-center gap-3 rounded-3xl"><img src="assets/checkbox.png" alt=""><h1 class="font-bold text-2xl">23</h1></button></div>
-                <div><button><img src="assets/theme-btn.png" class="bg-[#F4F7FF] rounded-full p-1" alt=""></button></div>
+                <div><button><img src="assets/theme-btn.png" id="random" class="bg-[#F4F7FF] rounded-full p-1" alt=""></button></div>
             </div>
         </nav>
     </header>
     <main class="max-w-screen-2xl mx-auto my-5 bg-white rounded-2xl px-6 pt-6 pb-8">
-        <section>
-            <div>
-                <div></div>
-                <div class="rounded-xl bg-gradient-to-br from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8]">
-                    <button class=" py-6 pl-10 pr-20 flex items-center gap-6  ">
-                        <img src="assets/board.png" alt="">
-                        <h1 class="font-medium text-white text-2xl">Discover Something New Today!</h1>
-                    </button>
+        <section class="grid grid-cols-4 gap-5">
+            <section class="col-span-3">
+                <section class="pb-4"> 
+                    <!-- Card Section -->
+                    <div class="grid grid-cols-4 gap-6 ">
+                        <div class="rounded-xl bg-[#F4F7FF] pl-8 pr-5 py-6 flex gap-4 col-span-1">
+                           <div class="bg-white p-5 rounded-full"> <img src="assets/checkbox.png" alt=""></div>
+                           <div >
+                            <p class="text-[#00303C]">Task Assigned </p>
+                            <h1 id="work" class="font-bold text-4xl">05</h1>
+                           </div>
+        
+                        </div>
+                        <div class="rounded-xl bg-gradient-to-br from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] col-span-2">
+                            <button class=" py-6 pl-10 pr-20 flex items-center gap-6  ">
+                                <img src="assets/board.png" alt="">
+                                <h1 class="font-medium text-white text-2xl">Discover Something New Today!</h1>
+                            </button>
+                        </div>
+                        
+                    
+                    <div class="col-span-1">
+                        <div class="rounded-xl bg-[#F4F7FF] pl-8 pr-5 py-6 flex gap-4">
+                            <div class="bg-white p-5 rounded-full"> <img src="assets/calender.png" alt=""></div>
+                            <div >
+                             <p class="text-[#00303C] text-2xl">Wed ,</p>
+                             <h1 id="work" class="font-medium text-xl">Jul 28 2025 </h1>
+                        </div>
+                    </div>
                 </div>
-                <div></div>
-            </div>
-            <div></div>
+        
+        
+               
+        
+        
+                </section>
+                <section> <!-- main div -->
+                    <div  class="grid grid-cols-3 gap-9 "> 
+                        <!-- Six card Section -->
+                         <!-- card1 -->
+                        <div class="p-6  bg-[#F4F7FF] rounded-2xl flex flex-col gap-4 justify-start ">
+                            <div>
+                                <div class="bg-white w-28 rounded-lg py-2 px-4 ">
+                                    <p class="text-[#00303C]">ShopEase</p>
+                                </div>
+                                <div>
+                                    <h1 class="font-medium text-xl text-[#00303C]">Fix Mobile Button Issue </h1>
+                                </div>
+                                <div class="p-4 bg-white rounded-lg  ">
+                                    <p class="text-wrap text-xs text-gray-400">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                                    
+                                </div>
+                                <div class="border-b-2 border-dotted border-gray-300"></div>
+                
+                
+                                <div class="flex justify-between">
+                                    <div>
+                                        <p class="text-gray-400 text-xs">Deadline</p>
+                                        <p class="font-medium text-[#00303C]">21 March 2025</p>
+                                    </div>
+                                    <div><button class="bg-[#3752FD] px-3 py-2 font-medium text-white rounded-lg" >Completed</button></div>
+                                </div>
+                            </div>
+            
+                        </div>
+                        <!-- card2 -->
+                        <div class="p-6  bg-[#F4F7FF] rounded-2xl flex flex-col gap-4 justify-start ">
+                            <div>
+                                <div class="bg-white w-28 rounded-lg py-2 px-4 ">
+                                    <p class="text-[#00303C]">ShopEase</p>
+                                </div>
+                                <div>
+                                    <h1 class="font-medium text-xl text-[#00303C]">Fix Mobile Button Issue </h1>
+                                </div>
+                                <div class="p-4 bg-white rounded-lg  ">
+                                    <p class="text-wrap text-xs text-gray-400">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                                    
+                                </div>
+                                <div class="border-b-2 border-dotted border-gray-300"></div>
+                
+                
+                                <div class="flex justify-between">
+                                    <div>
+                                        <p class="text-gray-400 text-xs">Deadline</p>
+                                        <p class="font-medium text-[#00303C]">21 March 2025</p>
+                                    </div>
+                                    <div><button class="bg-[#3752FD] px-3 py-2 font-medium text-white rounded-lg" >Completed</button></div>
+                                </div>
+                            </div>
+            
+                        </div>
+                        <!-- card3 -->
+                        <div class="p-6 bg-[#F4F7FF] rounded-2xl flex flex-col gap-4 justify-start ">
+                            <div>
+                                <div class="bg-white w-28 rounded-lg py-2 px-4 ">
+                                    <p class="text-[#00303C]">ShopEase</p>
+                                </div>
+                                <div>
+                                    <h1 class="font-medium text-xl text-[#00303C]">Fix Mobile Button Issue </h1>
+                                </div>
+                                <div class="p-4 bg-white rounded-lg  ">
+                                    <p class="text-wrap text-xs text-gray-400">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                                    
+                                </div>
+                                <div class="border-b-2 border-dotted border-gray-300"></div>
+                
+                
+                                <div class="flex justify-between">
+                                    <div>
+                                        <p class="text-gray-400 text-xs">Deadline</p>
+                                        <p class="font-medium text-[#00303C]">21 March 2025</p>
+                                    </div>
+                                    <div><button class="bg-[#3752FD] px-3 py-2 font-medium text-white rounded-lg" >Completed</button></div>
+                                </div>
+                            </div>
+            
+                        </div>
+                        <!-- card4 -->
+                        <div class="p-6 bg-[#F4F7FF] rounded-2xl flex flex-col gap-4 justify-start ">
+                            <div>
+                                <div class="bg-white w-28 rounded-lg py-2 px-4 ">
+                                    <p class="text-[#00303C]">ShopEase</p>
+                                </div>
+                                <div>
+                                    <h1 class="font-medium text-xl text-[#00303C]">Fix Mobile Button Issue </h1>
+                                </div>
+                                <div class="p-4 bg-white rounded-lg  ">
+                                    <p class="text-wrap text-xs text-gray-400">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                                    
+                                </div>
+                                <div class="border-b-2 border-dotted border-gray-300"></div>
+                
+                
+                                <div class="flex justify-between">
+                                    <div>
+                                        <p class="text-gray-400 text-xs">Deadline</p>
+                                        <p class="font-medium text-[#00303C]">21 March 2025</p>
+                                    </div>
+                                    <div><button class="bg-[#3752FD] px-3 py-2 font-medium text-white rounded-lg" >Completed</button></div>
+                                </div>
+                            </div>
+            
+                        </div>
+                        <!-- card5 -->
+                        <div class="p-6 bg-[#F4F7FF] rounded-2xl flex flex-col gap-4 justify-start ">
+                            <div>
+                                <div class="bg-white w-28 rounded-lg py-2 px-4 ">
+                                    <p class="text-[#00303C]">ShopEase</p>
+                                </div>
+                                <div>
+                                    <h1 class="font-medium text-xl text-[#00303C]">Fix Mobile Button Issue </h1>
+                                </div>
+                                <div class="p-4 bg-white rounded-lg  ">
+                                    <p class="text-wrap text-xs text-gray-400">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                                    
+                                </div>
+                                <div class="border-b-2 border-dotted border-gray-300"></div>
+                
+                
+                                <div class="flex justify-between">
+                                    <div>
+                                        <p class="text-gray-400 text-xs">Deadline</p>
+                                        <p class="font-medium text-[#00303C]">21 March 2025</p>
+                                    </div>
+                                    <div><button class="bg-[#3752FD] px-3 py-2 font-medium text-white rounded-lg" >Completed</button></div>
+                                </div>
+                            </div>
+            
+                        </div>
+                        <!-- card6 -->
+                        <div class="p-6 bg-[#F4F7FF] rounded-2xl flex flex-col gap-4 justify-start ">
+                            <div>
+                                <div class="bg-white w-28 rounded-lg py-2 px-4 ">
+                                    <p class="text-[#00303C]">ShopEase</p>
+                                </div>
+                                <div>
+                                    <h1 class="font-medium text-xl text-[#00303C]">Fix Mobile Button Issue </h1>
+                                </div>
+                                <div class="p-4 bg-white rounded-lg  ">
+                                    <p class="text-wrap text-xs text-gray-400">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                                    
+                                </div>
+                                <div class="border-b-2 border-dotted border-gray-300"></div>
+                
+                
+                                <div class="flex justify-between">
+                                    <div>
+                                        <p class="text-gray-400 text-xs">Deadline</p>
+                                        <p class="font-medium text-[#00303C]">21 March 2025</p>
+                                    </div>
+                                    <div><button class="bg-[#3752FD] px-3 py-2 font-medium text-white rounded-lg" >Completed</button></div>
+                                </div>
+                            </div>
+            
+                        </div>
+                        
+                    </div>
+                </section>
+            </section>
+            <section>
+            </section>
+            <section>
+
+            </section>
         </section>
     </main>
     <script src="js/dev.js"></script>

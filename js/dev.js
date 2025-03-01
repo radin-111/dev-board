@@ -1,1 +1,4 @@
-alert('working')
+document.getElementById('random').addEventListener('click',function(){
+    
+    
+})
