@@ -34,7 +34,7 @@
     </header>
     <main class="max-w-screen-2xl mx-auto my-5 bg-white    mb-6 gap-5">
         <section class="grid grid-cols-4 gap-8  ">
-            <section class="common col-span-3 px-6 py-7 pr-0  !rounded-2xl">
+            <section class="common col-span-3 px-6 py-7 pr-0  ">
                 <section class="pb-4"> 
                     <!-- Card Section -->
                     <div class="grid grid-cols-4 gap-6 ">
@@ -119,7 +119,7 @@
                                         <p class="text-gray-400 text-xs">Deadline</p>
                                         <p class="font-medium text-[#00303C]">21 March 2025</p>
                                     </div>
-                                    <div><button class="bg-[#3752FD] px-3 py-2 font-medium text-white rounded-lg" >Completed</button></div>
+                                    <div><button id="btn-2" class="bg-[#3752FD] px-3 py-2 font-medium text-white rounded-lg "   >Completed</button></div>
                                 </div>
                             </div>
             
@@ -223,7 +223,7 @@
                                         <p class="text-gray-400 text-xs">Deadline</p>
                                         <p class="font-medium text-[#00303C]">21 March 2025</p>
                                     </div>
-                                    <div><button class="bg-[#3752FD] px-3 py-2 font-medium text-white rounded-lg" >Completed</button></div>
+                                    <div><button  id="b6" class="bg-[#3752FD] px-3 py-2 font-medium text-white rounded-lg" >Completed</button></div>
                                 </div>
                             </div>
             
@@ -233,11 +233,18 @@
                 </section>
             </section>
             
-            <section class="h-full  bg-[#F4F7FF] px-4  ">
-                <section class="w-full h-full bg-white common rounded-2xl"></section>
+            <section class="h-full  bg-[#F4F7FF] px-4 ">
+                <section class="w-full h-full bg-white common rounded-2xl pt-6 ">
+                    <div class="flex gap-4    mx-24 items-center justify-center">
+                        <div><img src="assets/activity.png" alt=""></div>
+                        <h5 class="font-medium ">Activity log</h5>
+                    </div>
+                    <div><button class=" bg-[#3752FD] px-3 py-2 font-medium text-white rounded-lg mx-24 mt-8 mb-5">Clear History</button></div>
+                    <div class="w-full border-dashed border-2 border-gray-200"></div>
+                </section>
             </section>
         </section>
     </main>
-    <script src="js/dev.js"></script>
+   <script src="js/script.js"></script>
 </body>
 </html>
