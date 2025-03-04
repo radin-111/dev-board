@@ -18,7 +18,7 @@
     }
 </style>
 </head>
-<body class="bg-[#F4F7FF] max-w-full h-screen px-36 pt-20 pb-24">
+<body class="bg-[#F4F7FF] max-w-full max-h-full px-36 pt-20 pb-24">
     <header class="max-w-screen-2xl mx-auto ">
         <nav class="bg-white rounded-2xl flex justify-between items-center p-6">
             <div class="flex  items-center gap-4">
@@ -32,12 +32,36 @@
     </header>
     
     <h1 class="text-center font-bold text-2xl mt-10">Blog</h1>
-    <section class="max-w-screen-2xl mx-auto mt-6">
+    <section class="max-w-screen-2xl mx-auto mt-6 h-full bg-[#F4F7FF] flex flex-col gap-6">
 
-        <div class="bg-white rounded-2xl flex justify-between items-center p-6">
+
+        <div class="bg-white rounded-2xl  items-center p-6">
             <div class="ml-4 my-4"><h1 class="font-semibold text-3xl">Question-1: What are the different ways to select an element in the DOM?</h1></div>
-            <div class="my-4 border-b border-dashed border-gray-300"></div>
+            <div class="my-6 border-b border-dashed w-full border-gray-300"></div>
+            <div class="ml-4 my-4"><h1 class=" text-3xl text-gray-500">getElementsByTagName(), getElementsByClassName(), getElementById() , querySelector(),            querySelectorAll()</h1></div>
         </div>
+        <div class="bg-white rounded-2xl  items-center p-6">
+            <div class="ml-4 my-4"><h1 class="font-semibold text-3xl">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1></div>
+            <div class="my-6 border-b border-dashed w-full border-gray-300"></div>
+            <div class="ml-4 my-4"><h1 class=" text-3xl text-gray-500">innerHTML means the innerHTML code of an element . innerText means the text of an html element or child.textContent means the text of a node list</h1></div>
+        </div>
+        <div class="bg-white rounded-2xl  items-center p-6">
+            <div class="ml-4 my-4"><h1 class="font-semibold text-3xl">Question-3: What is event delegation in the DOM?</h1></div>
+            <div class="my-6 border-b border-dashed w-full border-gray-300"></div>
+            <div class="ml-4 my-4"><h1 class=" text-3xl text-gray-500">It means to handle event bubbling at an higher level in DOM and control the event in a significant level. </h1></div>
+        </div>
+        <div class="bg-white rounded-2xl  items-center p-6">
+            <div class="ml-4 my-4"><h1 class="font-semibold text-3xl">Question-4: What is event bubbling in the DOM?</h1></div>
+            <div class="my-6 border-b border-dashed w-full border-gray-300"></div>
+            <div class="ml-4 my-4"><h1 class=" text-3xl text-gray-500">Event bubbling means detecting an event to its target .It works when a event manager is setup.The process goes to upper level like a bubble</h1></div>
+        </div>
+        <div class="bg-white rounded-2xl  items-center p-6">
+            <div class="ml-4 my-4"><h1 class="font-semibold text-3xl">Question-5: How do you create, add, and remove elements using JavaScript?</h1></div>
+            <div class="my-6 border-b border-dashed w-full border-gray-300"></div>
+            <div class="ml-4 my-4"><h1 class=" text-3xl text-gray-500">I will create and element using "createElement()" , remove an element using "removeChild()" , add an element using "appendChild()"
+            </h1></div>
+        </div>
+
     </section>
 
     <script src="js/blog.js"></script>
